@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="http://localhost:3000/imc" method="POST">
+        <div class="area">
+            <div class="container">
+                <h1>IMC</h1>
+                <div class="div_altura">
+                    <h2>Altura (M)</h2>
+                    <input type="number" name="altura" id="altura" min="0" step="any">
+                </div>
+                <div class="div_peso">
+                    <h2>Peso (kg)</h2>
+                    <input type="number" name="peso" id="peso" min="0" step="any">
+                </div>
+                <button id="button">Calcular</button>
+                <textarea name="resultado" id="resultado" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
